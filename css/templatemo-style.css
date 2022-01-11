@@ -178,6 +178,13 @@ hr {
     vertical-align: middle;
 }
 
+.tm-timeline-break {
+    width: 75%px;
+    height: 2px;
+    background-color: #404040;
+    align: center;
+}
+
 .tm-timeline-connector {
     width: 55px;
     height: 3px;
