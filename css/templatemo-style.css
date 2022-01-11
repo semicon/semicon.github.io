@@ -155,6 +155,7 @@ a.tm-text-white:focus {
 hr {
     border-color: #666666;
     max-width: 70%;
+    text-align:center;
 }
 
 .tm-video-iframe {
