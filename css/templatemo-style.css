@@ -28,13 +28,16 @@ h3 {
 }
 
 .tm-site-logo {
-    background-image: url("https://avatars.githubusercontent.com/u/30399464?s=40&v=4");
+/*     background-image: url("https://avatars.githubusercontent.com/u/30399464?s=40&v=4");
     width: 40px;
     height: 40px;
     border: 7px solid white;
     transform: rotate(45deg);
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle; */
+    width: auto;
+    height: 40px;
+    content: url("https://i.ibb.co/MGVXJGh/LOGOKRUCHIANgrow.png"); 
 }
 
 .tm-site-title {
