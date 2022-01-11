@@ -9,7 +9,7 @@ http://www.templatemo.com/tm-517-timeless
 body {
     background-color: #333333;
     color: #FFFFFF;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'K2D', Helvetica, Arial, sans-serif;
     font-weight: 300;
     overflow-x: hidden;
 }
@@ -28,6 +28,7 @@ h3 {
 }
 
 .tm-site-logo {
+    background-image: url("https://avatars.githubusercontent.com/u/30399464?s=40&v=4");
     width: 40px;
     height: 40px;
     border: 7px solid white;
