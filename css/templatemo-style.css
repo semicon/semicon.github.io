@@ -28,11 +28,11 @@ h3 {
 }
 
 .tm-site-logo {
-/*     background-image: url("https://avatars.githubusercontent.com/u/30399464?s=40&v=4");
+  background-image: url("https://avatars.githubusercontent.com/u/30399464?s=40&v=4");
     width: 40px;
     height: 40px;
     border: 7px solid white;
-    transform: rotate(45deg); */
+    transform: rotate(45deg); 
     display: inline-block; 
     vertical-align: middle; 
     width: auto;
