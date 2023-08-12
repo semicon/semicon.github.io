@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>logo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      :root {
+        --color-main: #62fb00;
+        --color-main-1: #62fb0080;
+        --color-main-2: #62fb0099;
+        --border-size: 10px;
+        --rotate: rotate(100deg) skew(10deg, 10deg);
+        --size: 50px;
+        --size-box: 200px;
+        --shadow-base: 0 0 8px rgba(12, 69, 227, 0.2),
+          0 0 10px rgba(12, 69, 227, 0.4),
+          0 0 10px rgba(12, 69, 227, 0.6),
+          0 0 10px rgba(12, 69, 227, 0.8),
+          0 0 40px rgba(12, 69, 227, 1);
+        --color-light: #A4F6FE;
+      }
+      
+      section {
+        position: relative;
+        width: 100%;
+        height: 100dvh;
+        background-color: #000;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      
+      .bg {
+        --radius: 75px;
+        position: absolute;
+        width: var(--size-box);
+        background: linear-gradient(180deg,
+            rgba(0, 98, 251, 0) 0%,
+            rgba(0, 98, 251, .8) 90%,
+            rgb(0, 98, 251) 100%);
+        bottom: 32px;
+        border-bottom-left-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
+        left: 0;
+        animation: animate 8s linear infinite;
+        animation-delay: 2ms;
+        z-index: 10;
+        bottom: 51px;
+        box-shadow: 0 30px 20px -5px rgba(12, 69, 227, 0.1),
+          0 30px 20px -5px rgba(12, 69, 227, 0.2),
+          0 30px 20px -5px rgba(12, 69, 227, 0.3),
+          0 30px 20px -5px rgba(12, 69, 227, 0.4),
+          0 30px 20px -5px rgba(12, 69, 227, 0.5);
+        opacity: .4;
+      }
+      
+      @keyframes animate {
+      
+        0% {
+          height: 90px;
+        }
+      
+        25% {
+          height: 250px;
+        }
+      
+        50% {
+          height: 180px;
+        }
+      
+        75% {
+          height: 200px;
+        }
+      
+        100% {
+          height: 90px;
+        }
+      }
+      
+      
+      .container {
+        position: relative;
+        width: var(--size-box);
+        height: 350px;
+        left: 0px;
+        bottom: 0px;
+      }
+      
+      .base {
+        position: absolute;
+        width: var(--size-box);
+        height: var(--size-box);
+        transform: rotateX(114deg);
+        border-radius: 50%;
+        background: radial-gradient(circle 360px,
+            rgba(0, 98, 251, .3) 0%,
+            rgba(0, 98, 251, .3) 50%,
+            rgba(0, 98, 251, 1) 100%);
+        border: 3px solid var(--color-light);
+        box-shadow: var(--shadow-base);
+        display: block;
+        left: 0;
+        bottom: -30px;
+        filter: blur(2px);
+      }
+      
+      .base::after {
+        content: '';
+        position: absolute;
+        width: calc(var(--size-box) - 150px);
+        height: calc(var(--size-box) - 160px);
+        transform: rotateX(148deg);
+        border-radius: 50%;
+        border: 3px solid var(--color-light);
+        background-color: #fff;
+        box-shadow: var(--shadow-base);
+        display: block;
+        left: 68px;
+        bottom: 43px;
+      }
+      
+      .base::before {
+        content: '';
+        position: absolute;
+        width: calc(var(--size-box) - 60px);
+        height: calc(var(--size-box) - 69px);
+        transform: rotateX(164deg);
+        border-radius: 50%;
+        border: 3px solid var(--color-light);
+        box-shadow: var(--shadow-base);
+        display: block;
+        left: 24px;
+        bottom: 16px;
+      }
+      
+      .water {
+        position: absolute;
+        opacity: .7;
+      }
+      
+      
+      .water .bubbles {
+        position: absolute;
+        background-color: var(--color-main);
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        animation: moves 3s linear infinite;
+      }
+    
+      .water .bubbles:nth-child(1) {
+        animation: moves 4s linear infinite;
+        background-color: #8b41fa;
+      }
+      
+      .water .bubbles:nth-child(3) {
+        animation: moves 2s linear infinite;
+        background-color: #fff;
+      }
+      
+      .water .bubbles:nth-child(4) {
+        background-color: #b586fb;
+        animation: moves 4s linear infinite;
+      }
+      
+      @keyframes moves {
+        0% {
+          transform: translate(0, 0);
+          opacity: 0;
+        }
+      
+        50% {
+          transform: translate(0, -100px);
+          opacity: 1;
+        }
+      
+        100% {
+          transform: translate(0, -200px);
+          opacity: 0;
+        }
+      }
+      
+      .logo {
+        background-image: url("https://semicon.github.io/img/taksila8088.png");
+        position: absolute;
+        left: 55px;
+        align:center;
+        animation: animate-logo 5s linear infinite;
+        animation-delay: 3ms;
+        width: 80px;
+        height: 88px;
+      }
+      
+      @keyframes animate-logo {
+        0% {
+          bottom: 120px;
+          opacity: 1;
+        }
+      
+        50% {
+          bottom: 170px;
+          opacity: .8;
+        }
+      
+        100% {
+          opacity: 1;
+          bottom: 120px;
+        }
+      }
+    </style>
+  
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="logo"></div>
+      <div class="bg"></div>
+      <div class="water"></div>
+      <div class="base"></div>
+    </div>
+  </section>
+</body>
+</html>
+  
+<script>
+    let animationContainer = document.querySelector('.container');
+    let water = document.querySelector('.water');
+    let myHtml = '';
+    
+    for (let i = 0; i < 5; i++) {
+      myHtml += '<div class="bubbles"></div>';
+    }
+    
+    water.innerHTML = myHtml;
+    
+    function createWaterRandom() {
+      water.style.bottom = Math.random() * 200 + 'px';
+      water.style.left = Math.random() * 95 + '%';
+    
+      let waterClone = water.cloneNode(true);
+      animationContainer.appendChild(waterClone);
+    
+      setTimeout(() => {
+        waterClone.remove();
+      }, 8000);
+    }
+    
+    setInterval(createWaterRandom, 800);
+    //# sourceURL=pen.js
+</script>
